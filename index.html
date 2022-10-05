@@ -1,94 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Bar</title>
+    <title>Navigation</title>
     <style>
-        * {
+        *{
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
-            color: rgb(214 253 244);
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        header {
-            background-image:linear-gradient(rgb(133 125 246), rgb(55 49 156));
-            border-radius: 14px;
+        header{
+            /* width: 100%;
+            height: 100%; */
             display: flex;
-            align-items: center;
             justify-content: space-between;
-            flex-wrap: wrap;
-
+            align-items: center;
+            padding: 20px 30px;
+            border-radius: 10px;
+            background-image: linear-gradient(#24252A,black);
+            opacity: 86%;
         }
-
-        .logo {
-            padding: 5px 20px;
-            font-size: 13px;
-            font-weight: bolder;
+        .logo{
+            font-size: 20px;
+            font-weight: bold;
+            color: wheat;
+            letter-spacing: 1.5px;
+            cursor: pointer;
             text-transform: uppercase;
-
-
         }
-
-       a, nav ul li a {
-            font-size: large;
-            text-decoration: none;
-            padding: 12px 43px;
-            font-weight: bolder;
-        }
-
-        nav ul li a:hover {
-            color: rgb(0, 0, 0);
-        }
-
-        nav ul li {
-            list-style: none;
+        nav li{
             display: inline-block;
+            list-style: none;
+            padding: 0px 35px;
         }
-
-        .btn {
-            padding: 5px 14px;
-            font-size: 19px;
-            border-radius: 9px;
+        a,button{
+            text-decoration: none;
             font-weight: bolder;
-            border: none;
-            background-color: rgba(29, 11, 162, 0.128);
-            margin: 3px 33px;
-            
-        }
-        .btn a:hover{
-            color: black;
-            transition: .3s;
+            font-size: 16px;
+            color: wheat;
+
         }
 
-        img {
-            width: 43px;
-            height: 35px;
+        button{
+            background-color: blue;
+            padding: 8px 23px;
+            border-radius: 12px;
+            border: none;
+            transition: .4s;
+        }
+        button:hover{
+            background-color: rgb(34, 34, 252);
+        }
+        nav li a:hover{
+            color: blue;
+            transition: all .3s ease;
+        }
+        .img img{
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
         }
     </style>
 </head>
-
 <body>
     <header>
-        <div class="logo">
-            <img src="../navigation bar pracitice/img/saeed1.png" alt="Error Loading">
-            <p>saeed</p>
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li class="item"><a href="#">Home</a></li>
-                <li class="item"><a href="#">About</a></li>
-                <li class="item"><a href="#">Services</a></li>
-                <li class="item"><a href="#"> Contact Us</a></li>
-            </ul>
-        </nav>
-        <button class="btn">
-            <a href="#">Sign in</a>
-        </button>
-    </header>
-</body>
+    <div class="logo">
+        <p>Navbar</p>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li class="item" id="item-1"><a href="#">Home </a></li>
+            <li class="item" id="item-2"><a href="#">About</a></li>
+            <li class="item" id="item-3"><a href="#">Services</a></li>
+            <li class="item" id="item-4"><a href="#">Contact Us</a></li>
+        </ul>
 
+    </nav>
+    <button>
+        <a href="#">Get Started</a>
+    </button>
+</header>
+<div class="img">
+    <img src="../gym1.jpg" alt="Error Loading">
+</div>
+</body>
 </html>
